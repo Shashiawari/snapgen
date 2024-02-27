@@ -1,0 +1,177 @@
+.navbar {
+
+  backdrop-filter: blur(10px);
+  border: 2px solid;
+  -webkit-box-shadow: -1px -1px 25px 3px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: -1px -1px 25px 3px rgba(0, 0, 0, 0.58);
+  box-shadow: -1px -1px 25px 3px rgba(0, 0, 0, 0.58);
+  z-index: 1;
+  border-radius: 50px;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+body {
+  overflow: hidden;
+  background-image: url("https://res.cloudinary.com/dq7brjjnz/image/upload/v1708869364/Desktop_-_1_sgngie.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+
+}
+
+.moon {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  width: 100%;
+  pointer-events: none;
+  width: 622px;
+  height: 610px;
+  animation: rotate 70s infinite;
+}
+
+
+
+
+.saturn {
+  position: absolute;
+  width: 839px;
+  height: 590px;
+  left: 60%;
+  top: 40%;
+}
+
+.rocket {
+  position: absolute;
+  width: 163.99px;
+  height: 163.99px;
+  left: 928.16px;
+  top: 0px;
+  transform: rotate(-10deg);
+  animation: rocket 60s infinite;
+
+}
+
+.ufo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 1230px;
+  top: 154.49px;
+  transform: rotate(-16.11deg);
+  animation: ufo 10s infinite;
+
+}
+
+.alien {
+
+  position: absolute;
+  width: 312px;
+  height: 266px;
+  left: 149px;
+  top: 75%;
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes rocket {
+  0% {
+    transform: translatex(-400px);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: translatex(-400px);
+  }
+
+}
+
+@keyframes ufo {
+  0% {
+    transform: translatex(-50%);
+  }
+
+  50% {
+    transform: rotate(50deg);
+  }
+
+  100% {
+    transform: translatex(-50%);
+  }
+
+}
+
+
+.main-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main2 {
+  position: absolute;
+  top: 3%;
+  background-color: rgba(0, 0, 0, 0.433);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  height: 80vh;
+  width: 90%;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(250, 9, 9), darkorchid) 1;
+  -webkit-box-shadow: -1px -1px 25px 3px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: -1px -1px 25px 3px rgba(0, 0, 0, 0.58);
+  box-shadow: -1px -1px 25px 3px rgba(0, 0, 0, 0.58);
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.banner{
+
+  height: 80vh;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: 'Princess Sofia', cursive;
+}
+.banner h1{
+  font-size: 200px;
+}
+
+.banner input{
+  padding: 20px;
+  font-size: 35px;
+  border-radius: 30px;
+  outline-color: rgba(114, 6, 187, 0.889);
+  background-color: rgba(1, 1, 1, 0.273);
+  color: rgb(255, 255, 255);
+  border: 0;
+}
+
+.banner button{
+  padding: 15px;
+  font-size: 35px;
+  border-radius: 30px;
+}
