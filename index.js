@@ -12,11 +12,14 @@ var idd=["https://images.unsplash.com/photo-1610450949065-1f2841536c88?crop=entr
 app.get("/",(req,res)=>{
     res.render("main",{iddd:idd});
 })
+app.get("/about",(req,res)=>{
+  res.render("about");
+})
 app.post("/", (req, res) => {
   const query = req.body.querys;
   const pic = [];
   const url = "https://api.unsplash.com/search/photos/?query=" + query + "&client_id=ApP3teRJw45yZj8oZAzJkia9GBkWns0zof35CM8I0Ss";
-  
+  +-
   https.get(url, (response) => {
     let data = "";
     response.on("data", (chunk) => {
